@@ -110,11 +110,11 @@ app.config( function ($routeProvider) {
     }).
     when('/privacy-policy', {
       templateUrl: 'partials/privacy-policy.html',
-      controller: 'PrivacyPolicyCtrl',
+      controller: 'PearlLashPolicyCtrl',
     }).
     when('/return-policy', {
       templateUrl: 'partials/return-policy.html',
-      controller: 'ReturnPolicyCtrl',
+      controller: 'PearlLashPolicyCtrl',
     }).
     otherwise("/");  
 });
