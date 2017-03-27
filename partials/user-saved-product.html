@@ -1,0 +1,22 @@
+<div ng-controller="ProductsCtrl"></div>
+    <div class="row">
+      <div class="col-md-12">
+        <!-- <div class="col-md-3 saved-product-card"> -->
+          <div ng-repeat="product in productsSaved" class="product-cards">
+              <h5>Product: {{product.name}}</h5>
+              <p>{{product.description}}</p>
+              <p>${{product.price}}</p>
+              <img class="products-image" src="{{product.image}}">
+              <div class=""><button class="btn btn-danger" ng-click="itemDelete(item.id)">Buy</button></div>
+              <br>
+              <div class=""><a class="btn btn-default" ng-href="#!/user-profile">My Profile</a></div>
+              <br>
+              <div class=""><button class="btn btn-danger" ng-click="productDelete(product.id)">Delete</button></div>
+
+        </div>
+      </div>
+    </div>
+  <!-- </div> -->
+
+
+  

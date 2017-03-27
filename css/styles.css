@@ -1,0 +1,321 @@
+html{
+  font-family: 'Roboto', sans-serif;
+  font-size: thin;
+}
+.background-image{
+  background-image:url('../images/pl-letter-logo/websiteBg-holga-white.jpg');
+  /*max-height: 800px;
+  max-width: 800px;*/
+  /*background-repeat: no-repeat;*/
+  background-attachment: fixed;
+
+}
+
+/* Basic styling for pages */
+
+/* main header navigation styles */
+.header-nav{
+  background: white;
+  border: 2px solid white;
+  /*border-radius: 30%;*/
+  margin-top:50px;
+}
+/* main menu styles */
+.main-nav{
+  background: white;
+  border: 2px solid white;
+  /*border-radius: 30%;*/
+  margin-top: 50px;
+}
+
+.footer-social-links{
+  background-color: white;
+  /*border-radius: 30%;*/
+}
+/*.footer-social-links:hover{*/
+  /*font-size: 18px;*/
+/*}*/
+
+.footer-copyright{
+  background: gray;
+  margin-top: 50px;
+  /*border-radius: 30%;*/
+  margin-bottom: 20px;
+}
+/* styling for course cards */
+.course-cards{
+  border: 2px solid black;
+  margin: 10px;
+  padding: 20px;
+  width: 500px;
+  height: 700px;
+  text-align: center;
+}
+.course-cards:hover{
+  border: 5px solid gray;
+}
+.courses-image{
+  max-width: 250px;
+  max-height: 250px;
+}
+/* product card styling */
+.products-name{
+  font-weight: bold;
+}
+/* item-list - user details page */
+.user-details{
+  border: 2px solid gray;
+  padding: 15px;
+  margin: 15px;
+}
+.user-details-btns{
+  border: 2px solid pink;
+  padding: 15px;
+  margin: 15px;
+}
+
+.user-details-header{
+  border: 2px solid green;
+  padding: 15px;
+  margin: 15px;
+}
+
+/* image stying for products */
+.products-image{
+  max-width: 250px;
+  max-height: 250px;
+}
+/* product cards styling */
+.products-list{
+  width: 500px;
+  height: 700px;
+  text-align: center;
+}
+/* gray border when user hovers over product card */
+.products-list:hover{
+  border: 4px solid gray ;
+}
+.saved-product-card{
+  border: 2px solid black;
+}
+
+.saved-user-product-cards{
+  width: 500px;
+  height: 500px;
+  border: 2px solid black;
+}
+
+/* social icons styling */
+.insta-png{
+  max-height: 32px ;
+  max-width: 32px ;
+}
+.insta-png:hover{
+  max-height: 40px ;
+  max-width: 40px ;
+}
+/* social icons styling */
+.facebook-png{
+  max-height: 32px;
+  max-width: 32px;
+}
+.facebook-png:hover{
+  max-height: 40px ;
+  max-width: 40px ;
+}
+/* social icons styling */
+.yelp-png{
+  max-width: 32px;
+  max-height: 32px;
+}
+.yelp-png:hover{
+  max-width: 40px;
+  max-height: 40px;
+}
+/* social icons styling */
+.mail-png{
+  max-width: 32px;
+  max-height: 32px;
+}
+.mail-png:hover{
+  max-width: 40px;
+  max-height: 40px;
+}
+/* social icons styling */
+.twitter-png{
+  max-width: 32px;
+  max-height: 32px;
+}
+.twitter-png:hover{
+  max-width: 40px;
+  max-height: 40px;
+}
+/* social icons styling */
+.google-png{
+  max-width: 32px;
+  max-height: 32px;
+}
+.google-png:hover{
+  max-width: 40px;
+  max-height: 40px;
+}
+/* social icons styling */
+.social-icons{
+  list-style-type: none;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+/* save btn in online-store aka products */
+.product-save-btn{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+
+
+
+/* pearl lash logo styling */
+.pearl-lash-logo {
+  max-height: 650px ;
+  max-width: 650px ;
+  text-align: center;
+}
+
+
+
+/* all links */
+.links{
+  color:black;
+  font-weight: bold;
+  list-style-type: none; /*for user profile*/
+}
+.links:hover{
+  color:black;
+  font-size:16px;
+  text-decoration: none;
+}
+
+.user-background{
+  text-align: center;
+  max-height: 500px;
+  max-width: 500px;
+}
+
+
+/* pearl lash logo in navbar */
+.image-div{
+  text-align: center;
+}
+/* links in header */
+.header-links{
+  list-style-type: none;
+}
+/* links in dropdown menu */
+/*.dropdown{
+  list-style-type: none;
+}*/
+/* links in menu */
+.menu-links{
+  list-style-type: none;
+}
+
+
+
+/* footer links */
+.footer-links{
+  list-style-type: none;
+  color: white;
+}
+
+
+
+/* my carousel */
+#myCarousel{
+  max-height: 800px;
+  max-width: 800px;
+  padding: 20px;
+}
+.carousel-img{
+  max-width: 800px;
+  max-height: 800px;
+}
+/* google login form */
+#googleLogin{
+
+}
+/* product cards */
+.product-cards{
+  border: 4px dotted grey;
+  margin: 10px;
+  padding: 10px;
+}
+
+/* course name styles */
+.course-name{
+  font-weight: bold;
+}
+.course-note{
+  font-weight: bold;
+  font-size: 10px;
+}
+/* save btn in courses page */
+.save-btn{
+  background: #9068be;
+  color: white;
+  border: 2px solid #9068be;
+}
+.save-btn:hover{
+  background: gray;
+  border: 2px solid gray;
+}
+/*login page buttons, added to all btns*/
+.login-btns{
+  background: #9068be;
+  color: white;
+  border: 2px solid #9068be;
+}
+/* styles for product cards */
+.products-list{
+  border: 2px solid black;
+  margin: 10px;
+  padding:20px;
+}
+/* user profile styles */
+.user-image{
+  /*border: 2px solid black;*/
+}
+/* user profile styles */
+.user-info{
+  /*border: 2px solid black;*/
+}
+/* user profile styles */
+.user-links{
+  border: 2px solid black;
+}
+/* user profile styles */
+.user-name{
+  border: 2px solid black;
+  text-align: center;
+}
+.user-background{
+  max-height: 400px;
+  max-height: 600px;
+}
+.user-profile-card{
+  border: 2px solid black;
+}
+
+.course-list{
+
+}
+
+
+
+
+
+
+
+
+
+
+

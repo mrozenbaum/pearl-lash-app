@@ -1,0 +1,42 @@
+<!-- Saved profile details page -->  
+    <!-- <div class="panel panel-default">  -->
+      <!-- <div class="panel-body"> -->
+  <div class="row">
+    <div class="col-md-12">  
+        <div ng-repeat="item in items">
+        <div class="user-details-header">
+          <h1>Thanks for updating your profile!</h1>
+        </div>
+          <br>
+
+        <div class="user-details">
+          <div class=""><a ng-href="#!/items/{{item.id}}">{{item.task}}</a></div>
+          
+          <div class="">First Name: {{item.firstName}}</div>
+          <br>
+          <div class="">Last Name: {{item.lastName}}</div>
+          <br>
+          <div class="">Birthday: {{item.birthday}}</div>
+          <br>
+          <div class="">Profession: {{item.profession}}</div>
+          <br>
+          <div class="">Education: {{item.education}}</div>
+          <br>
+          <div class="">Zipcode: {{item.zipCode}}</div>
+          <br>
+          <div class="">Address: {{item.address}}</div>
+          <br>
+          <div class="">Phone: {{item.phone}}</div>
+        </div>  
+          <br>
+         <div class="user-details-btns"> 
+          <div class=""><button class="btn btn-danger" ng-click="itemDelete(item.id)">DELETE</button></div>
+          <br>
+          <div class=""><a class="btn btn-default" ng-href="#!/items/edit">{{btnText}}EDIT</a>
+          </div>
+          <br>
+          <div class=""><a class="btn btn-default" ng-href="#!/user-profile">My Profile</a></div>
+         </div> 
+    </div>
+  </div>
+</div>  

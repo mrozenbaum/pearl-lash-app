@@ -1,0 +1,56 @@
+
+<div ng-controller="ProductsCtrl">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="col-md-9">
+        <div ng-repeat="products in products">
+          <h1>{{products.name}}</h1>
+          <p>{{products.description}}</p>
+        </div> 
+          <br>
+          <br>
+      </div>
+    </div>
+  </div>
+</div>  
+<!-- Product Cards -->
+  <div class="row">  
+    <div class="col-md-12">
+      <div ng-controller="ProductsListCtrl">
+      <!-- product is potato -->
+        <div ng-repeat="product in productslist">
+          <div class="col-md-3 products-list">
+            <img class="products-image" src="{{product.image}}">
+            <br>
+            <div class="products-name">{{product.name}}</div>
+            <br>
+            <div class="products-description">{{product.description}}</div>
+            <br>
+            <div class="products-price">${{product.price}}</div>
+            <div class="add-to-cal-btn product-save-btn">
+              <button type="submit" class="btn btn-primary save-btn" ng-click="saveProduct(product)">Buy</button>
+            </div>
+            <div class="add-to-cal-btn product-save-btn">
+              <button type="submit" class="btn btn-primary save-btn" ng-click="saveProduct(product)">Save</button>
+            </div>
+            <ul class="list-inline">
+              <li class="links"><a class="links" ng-href="#!/return-policy">Return Policy</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>  
+  <br>
+  <br>
+<!-- Privacy policy and return policy -->  
+  <div class="row">
+    <ul class="list-inline">
+      <div class="col-md-2">
+        <li><a ng-href="#!/privacy-policy">Privacy Policy</a></li>
+      </div>
+      <div class="col-md-2">
+        <li><a ng-href="#!/return-policy">Return Policy</a></li>
+      </div>
+    </ul> 
+  </div>        

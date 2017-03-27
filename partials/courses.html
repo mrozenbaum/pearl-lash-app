@@ -1,0 +1,50 @@
+<!-- List of Courses goes here -->
+<!-- <h1>Courses</h1> -->
+<div class="row">
+    <div class="col-md-12">
+          <br>
+          <br> 
+  <!-- Main course page summary -->
+          <div ng-controller="CoursesSummaryCtrl">
+            <div ng-repeat="summary in summary">
+              <div class="course-page-heading"><h4><b>{{summary.name}}</b></h4></div>
+              <br>
+              <div class="course-page-summary">{{summary.description}}</div>
+            </div>
+          </div>
+          <!-- <div class="certificate-image">
+            <ul>
+              <li><a><img src="../images/pearl-lash-basic-certificate.png">View Certificate</a></li>
+            </ul>
+          </div> -->
+           <br>
+          <br> 
+    </div>
+</div>       
+  <!-- Course Option cards -->
+  <div class="row">  
+    <div class="col-md-12">
+      <div ng-controller="CoursesCtrl">
+        <div ng-repeat="course in courses">
+          <div class="col-md-3 course-cards">
+            <img class="courses-image" src="{{course.image}}">
+            <div class="course-name">Course: {{course.name}}</div>
+            <br>
+            <div class="course-description">{{course.description}}</div>
+            <br>
+            <div class="course-note">{{course.note}}</div>
+            <br>
+            <div class="add-to-cal-btn">
+              <button type="submit" class="btn btn-primary save-btn" ng-click="saveCourse(course)">Sign Up!</button>
+            </div>
+            <br>
+            <div class="add-to-cal-btn">
+              <button type="submit" class="btn btn-primary save-btn" ng-click="saveCourse(course)">Save</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+<!-- Please note that in order to partake in any of our training courses you must either be currently enrolled in a beauty school (cosmetology, full specialty, or esthetician) or already hold an active beauty license as required of the state you reside in. -->

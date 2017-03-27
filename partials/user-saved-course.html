@@ -1,0 +1,28 @@
+<div ng-controller="CoursesCtrl"></div>
+    <div class="row">
+      <div class="col-md-12">
+        <!-- <div class="col-md-3 saved-course-card"> -->
+       
+          <div ng-repeat="course in coursesSaved" class="course-cards">
+            <!-- <div class="col-md-3"> -->
+              <img class="course-image" src="{{course.image}}">
+              <h5>course: {{course.name}}</h5>
+              <p>{{course.description}}</p>
+              <p class="course-note">{{course.note}}</p>
+              <div>
+              <br>
+              <br>
+              <a class="save-btn btn btn-danger" ng-click="itemDelete(item.id)">Sign Up!</a>
+              <br>
+              <br>
+              <a class="save-btn btn btn-default" ng-href="#!/user-profile">My Profile</a>
+              <br>
+              <br>
+              <a class="save-btn btn btn-danger" ng-click="courseDelete(course.id)">Delete</a>
+            <!-- </div> -->
+            </div>
+      </div>
+    </div>
+   </div> 
+  <!-- </div> -->
+

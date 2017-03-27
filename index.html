@@ -1,0 +1,65 @@
+ <!DOCTYPE html>
+<html lang="en" ng-app="PearlLashApp">
+<head>
+  <meta charset="UTF-8">
+  <title>Pearl Lash</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,500,700" rel="stylesheet">
+    <!-- Bootstrap css link -->
+    <link rel="stylesheet" type="text/css" href="/lib/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <!-- My css link -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+
+<!-- Main Page -->
+<body class="container-fluid background-image">
+  <div ng-include="'partials/navbar.html'"></div>
+    <div ng-view></div>
+  <div ng-include="'partials/footer.html'"></div>
+
+
+<!-- Jquery script tag -->
+<script type="text/javascript" src="/lib/node_modules/jquery/dist/jquery.min.js"></script>
+<!-- Bootstrap script tag -->
+<script type="text/javascript" src="/lib/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<!-- Angular script tags -->
+<script type="text/javascript" src="/lib/node_modules/angular/angular.min.js"></script>
+<script type="text/javascript" src="/lib/node_modules/angular-route/angular-route.min.js"></script>
+<!-- firebase script needs to be on top of app.js -->
+<script type="text/javascript" src="/lib/node_modules/firebase/firebase.js"></script>
+<!-- app.js always needs to be on top of all my script tags, before other scripts -->
+<script type="text/javascript" src="app/app.js"></script>
+<!-- this holds your api key etc -->
+<script type="text/javascript" src="app/values/fb-creds.js"></script>
+
+<!-- Factories JS -->
+<script type="text/javascript" src="app/factories/AuthFactory.js"></script>
+<script type="text/javascript" src="app/factories/ItemFactory.js"></script>
+<script type="text/javascript" src="app/factories/FilterFactory.js"></script>
+<script type="text/javascript" src="app/factories/CoursesFactory.js"></script>
+<script type="text/javascript" src="app/factories/ProductsFactory.js"></script>
+<script type="text/javascript" src="app/factories/AboutUsFactory.js"></script>
+<script type="text/javascript" src="app/factories/PrivacyPolicyFactory.js"></script>
+<script type="text/javascript" src="app/factories/ReturnPolicyFactory.js"></script>
+
+
+<!-- Controllers JS -->
+<script type="text/javascript" src="app/controllers/UserCtrl.js"></script>
+<script type="text/javascript" src="app/controllers/UserDetailsCtrl.js"></script>
+<script type="text/javascript" src="app/controllers/NavCtrl.js"></script>
+<script type="text/javascript" src="app/controllers/ItemNewCtrl.js"></script>
+<script type="text/javascript" src="app/controllers/ItemViewCtrl.js"></script>
+<script type="text/javascript" src="app/controllers/ItemEditCtrl.js"></script>
+<script type="text/javascript" src="app/controllers/TodoCtrl.js"></script>
+<script type="text/javascript" src="app/controllers/ItemListCtrl.js"></script>
+<script type="text/javascript" src="app/controllers/HomePageCtrl.js"></script>
+<script type="text/javascript" src="app/controllers/ContactUsCtrl.js"></script>
+<script type="text/javascript" src="app/controllers/ProductsCtrl.js"></script>
+<script type="text/javascript" src="app/controllers/CoursesCtrl.js"></script>
+<script type="text/javascript" src="app/controllers/AboutUsCtrl.js"></script>
+<script type="text/javascript" src="app/controllers/PrivacyPolicyCtrl.js"></script>
+<script type="text/javascript" src="app/controllers/ReturnPolicyCtrl.js"></script>
+
+
+  
+</body>
+</html>

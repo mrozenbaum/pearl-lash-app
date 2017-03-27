@@ -1,0 +1,12 @@
+<h1>Your profile details</h1>
+<ul class="list-group">
+    <li class="list-group-item"><strong>First Name: </strong> {{selectedItem.firstName}}</li>
+    <li class="list-group-item"><strong>Last Name:</strong> {{selectedItem.lastName}}</li>
+    <li class="list-group-item"><strong>Profession:</strong> {{selectedItem.profession}}</li>
+    <li class="list-group-item"><strong>Zip Code:</strong> {{selectedItem.zipCode}}</li>
+    <li class="list-group-item"><strong>Address:</strong> {{selectedItem.address}}
+    <li class="list-group-item"><strong>Phone:</strong> {{selectedItem.phone}}</li>
+</ul>
+<button class="btn btn-info"><a ng-href="#!/items/{{selectedItem.id}}/edit">Edit Profile</a></button>
+
+

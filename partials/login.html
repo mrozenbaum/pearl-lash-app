@@ -1,0 +1,49 @@
+<!-- Login with Google -->
+<div class="row">
+  <div class="col-md-12">
+  <div style="text-align: center" class="col-md-5">
+    <div class="" id="googleLogin">
+      <h4>Login with Google</h4>
+        <button class="btn btn-info login-btns" ng-click="loginGoogle()">Sign In</button>
+  </div>
+  </div>
+<!-- Login with email and password -->
+    <div class="col-md-5 text-right">
+      <section class="auth-form">
+        <h4>Login/Register with Email</h4>
+        <div>
+          Email: <input type="text" autofocus="true"  ng-model="account.email">
+        </div>
+        <div>
+          Password: <input type="password" ng-model="account.password">
+        </div>
+        <div>
+          <button class="btn btn-info login-btns" ng-click="login()">Login</button>
+
+          <button class="btn btn-default login-btns" ng-click="register()">Register</button>
+        </div>
+        <div class="checkbox">
+            <label><input type="checkbox">Remember me</label>
+        </div>
+      </section>
+    </div>
+   
+</div>
+
+
+<!-- form example -->
+
+<!-- <form>
+    <div class="form-group">
+        <label for="inputEmail">Email</label>
+        <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+    </div>
+    <div class="form-group">
+        <label for="inputPassword">Password</label>
+        <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+    </div>
+    <div class="checkbox">
+        <label><input type="checkbox"> Remember me</label>
+    </div>
+    <button type="submit" class="btn btn-primary">Login</button>
+</form> -->
