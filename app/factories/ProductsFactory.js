@@ -11,7 +11,7 @@ app.factory("ProductsFactory", function ($http, $q, FBCreds, AuthFactory) {
     return $q( (resolve, reject) => {
       $http.get("/jsons/products.json")
       .then( (data) => {
-        console.log("data from products in ProductsFactory:", data);
+        console.log("Product List in ProductsFactory:", data);
         resolve(data);
       })
       .catch( (error) => {
@@ -74,7 +74,7 @@ app.factory("ProductsFactory", function ($http, $q, FBCreds, AuthFactory) {
     return $q( (resolve, reject) => {
       $http.get("/jsons/products-guarantee.json")
       .then( (data) => {
-        console.log("data from products in ProductsFactory:", data);
+        console.log("Products Guarantee in ProductsFactory:", data);
         resolve(data);
       })
       .catch( (error) => {
