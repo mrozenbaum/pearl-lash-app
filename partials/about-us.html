@@ -1,15 +1,50 @@
 <div ng-controller="AboutUsCtrl"></div>
-    <div class="col-md-12">
-      <div class="col-md-9">
-        <h1>Pearl Eyelash Extensionssss</h1>
+  <div class="row">
+  <br>
+  <br>
+  <br>
+      <div class="col-md-12 about-container">  
           <div ng-repeat="about in about">
+          <br>
+            <h3 class="about-name"><b>~ {{about.name}} ~</b></h3>
             <br>
-            <h3><b>{{about.name}}</b></h3>
-            <br>
-            <p>{{about.description}}</p>
-          </div>  
-      </div>
+            <p class="about-description">{{about.description}}</p>
+          </div> 
+    </div> 
   </div>
+  <div class="row">
+  <div class="col-md-12">
+          <div class="about-k-image">
+            <a ng-href="#!/home-page">
+            <img class="k-profile-image img-responsive img-rounded" src="../images/k-profile.jpg" alt="Pearl Lash Extensions About Image"></a>
+          </div> 
+    </div>
+    <br>
+    <br> 
+    <br> 
+  </div>  
+    <br>
+    <br>
+<!--   <div class="row">
+    <div class="col-md-12">
+        <div class="about-k-images">
+            <a ng-href="#!/home-page">
+            <img class="k-profile-image img-responsive img-rounded" src="../images/k-working-edit.jpg" alt="Pearl Lash Extensions About Image"></a>
+        </div> 
+      </div>
+      </div>
+      <br>
+      <div class="row">  
+      <div class="col-md-12">
+        <div class="about-k-images">
+            <a ng-href="#!/home-page">
+            <img class="k-profile-image img-responsive img-rounded" src="../images/eye.jpg" alt="Pearl Lash Extensions About Image"></a>
+        </div> 
+      </div>
+    </div> -->
+
+        
+ 
 
 
 

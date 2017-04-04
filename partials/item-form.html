@@ -1,5 +1,12 @@
  <!-- edit user profile page --> 
-  <h1>{{title}}</h1>
+ <div class="row">
+ <div class="container-fluid background-profile">
+  <div class="col-md-12">
+  <br>
+    <div class="col-md-9">
+    <br>
+    <br>
+      <h1>{{title}}</h1>
           <form>
             <div class="form-group">
               <label>First Name</label>
@@ -19,29 +26,29 @@
             </div>
             <div class="form-group">
               <label>Education</label>
-              <input type="text" class="form-control" placeholder="Certified beautician..." ng-model="newTask.education" />
+              <input type="text" class="form-control" placeholder="Nashville Software School..." ng-model="newTask.education" />
             </div>
             <div class="form-group">
               <label>Address</label>
-              <input type="text" class="form-control" placeholder="low" ng-model="newTask.address" />
+              <input type="text" class="form-control" placeholder="Nashville,TN" ng-model="newTask.address" />
             </div>
             <div class="form-group">
               <label>Zip Code</label>
-              <input type="text" class="form-control" placeholder="Zip Code..." ng-model="newTask.zipCode" />
+              <input type="text" class="form-control" placeholder="12345" ng-model="newTask.zipCode" />
             </div>
             <div class="form-group">
               <label>Phone</label>
               <input type="text" class="form-control" placeholder="1234567890..." ng-model="newTask.phone" />
             </div>
-            
-            <!-- TODO: bind this button to a function -->
             <!-- Update Button -->
-            <button class="btn btn-default" ng-click="addNewItem()">{{btnText}}</button>
-            <!-- My Profile button -->
-            <a class="btn btn-default" ng-href="#!/user-profile">My Profile</a>
-            
+            <li class="btn btn-primary save-btn btn-xs" ng-click="addNewItem()"><span class="glyphicon glyphicon-pencil"></span><a class="links">{{btnText}}</a></li>  
           </form>
-
+          <br>
+          <br>
+        </div>
+      </div>  
+</div>
+</div>
 
 
 

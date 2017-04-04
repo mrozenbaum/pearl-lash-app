@@ -3,7 +3,7 @@
 app.controller("ItemNewCtrl", function($scope, ItemStorage, $location, AuthFactory){
   
   let user = AuthFactory.getUser();
-  $scope.title ="Edit your profile:";
+  $scope.title ="Edit your profile...";
   $scope.btnText = "Update"; 
 
   $scope.newTask = {

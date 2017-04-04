@@ -5,55 +5,55 @@
       "image": "images/products/eyelash-extensions.jpg",
       "name": "Classic Eyelash Extensions",
       "description": "A simple way to a full clean face, iLashCare Oil Free Cleansing Wipes remove eye and face makeup quickly and easily while leaving the skin clean, hydrated and glowing. Easily removes the heaviest makeup and can be used to freshen your skin throughout the day. Great for neck and chest area also.",
-      "price": 1000000
+      "price": "$$$"
     },
     { 
       "image": "images/products/lash-after-care.jpg",
       "name": "Lash After Care",  
       "description": "For prepping lashes prior to applying eyelash extensions. Removes any makeup, oils or residue on lashes. Allows bonding to initiate quicker and lashes to stay on longer.",
-      "price": 1000000
+      "price": "$$$"
     },
     { 
       "image": "images/products/lash-training-kit.jpg",
       "name": "Classic Eyelash Extensions Kit",  
       "description": "The Lashfresh Eyelash Extension Tool Kit contains a Flexible Silicone Lash Brush and Lash Comb to style lashes, 4 disposable Pro Clean Brushes and 4 Cosmetic Qtips to deep clean in between lashes and along lash line, and a Lash Pik to easily separate lashes in a convenient go tube.",
-      "price": 1000000
+      "price": "$$$"
     },
     { 
       "image": "images/products/lash-training-kit.jpg",
       "name": "Volume Eyelash Extensions Kit",  
       "description": "Create beautifully curled lashes in under a minute without breaking lashes by using our iLashCare Heated Eyelash Curler. This innovative, all-in-one design allows you to separate and comb lashes while creating deep curls.",
-      "price": 1000000
+      "price": "$$$"
     },
     { 
       "image": "images/products/lower-lash-stretch-mascara.jpg",
       "name": "Lower Lash Stretch Mascara",  
       "description": "Lower Lash Stretch Mascara's exclusive elastic formula creates an eye opening look for lash extension wearers. Its oil-free conditioning formula wears all day without smudging. Specially engineered brush extends even the tiniest lower lashes.",
-      "price": 1000000
+      "price": "$$$"
     },
     { 
       "image": "images/products/lash-food-eyeliner.jpg",
        "name": "Lash Food Eyeliner",  
        "description": "LashFood Conditioning Liquid Eyeliner, with Nano-Peptide Technology gives a precise, long lasting, quick drying, beautiful outlining effect to the eyes all while conditioning roots of lashes to transform frail and brittle lashes to become healthy and strong every morning.",
-       "price": 1000000
+       "price": "$$$"
     },
     {  
       "image": "images/products/lash-protein-remove-pads.jpg", 
        "name": "Lash Protein Remove Pads",  
        "description": "For prepping lashes prior to applying eyelash extensions. Removes any makeup, oils or residue on lashes. Allows bonding to initiate quicker and lashes to stay on longer.",
-       "price": 1000000
+       "price": "$$$"
     },
     { 
       "image": "images/products/brow-extensions-kits.jpg",
        "name": "Brow Extension Kit",  
        "description": "Volume Up Coating Mascara formulated for eyelash extensions. Provides volume, length and intensity. Washes off easily. Black.",
-       "price": 1000000
+       "price": "$$$"
     },
     { 
       "image": "images/products/eyelash-extensions.jpg", 
        "name": "Volume Eyelash Extensions",  
        "description": "LashFood Conditioning Liquid Eyeliner, with Nano-Peptide Technology gives a precise, long lasting, quick drying, beautiful outlining effect to the eyes all while conditioning roots of lashes to transform frail and brittle lashes to become healthy and strong every morning.",
-       "price": 1000000
+       "price": "$$$"
    }
  ]      
 } 

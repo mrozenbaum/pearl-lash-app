@@ -1,56 +1,45 @@
-
+<!-- Products Page -->
 <div ng-controller="ProductsCtrl">
   <div class="row">
+  <br>
     <div class="col-md-12">
-      <div class="col-md-9">
+      <br>
+      <br>
+      <br>
+<!-- Main products page summary -->      
         <div ng-repeat="products in products">
-          <h1>{{products.name}}</h1>
-          <p>{{products.description}}</p>
-        </div> 
           <br>
           <br>
-      </div>
-    </div>
-  </div>
-</div>  
-<!-- Product Cards -->
-  <div class="row">  
-    <div class="col-md-12">
-      <div ng-controller="ProductsCtrl">
-      <!-- product is potato -->
-        <div ng-repeat="product in productslist">
-          <div class="col-md-3 products-list">
-            <img class="products-image" src="{{product.image}}">
-            <br>
-            <div class="products-name">{{product.name}}</div>
-            <br>
-            <div class="products-description">{{product.description}}</div>
-            <br>
-            <div class="products-price">${{product.price}}</div>
-            <div class="add-to-cal-btn product-save-btn">
-              <button type="submit" class="btn btn-primary save-btn" ng-click="saveProduct(product)">Buy</button>
-            </div>
-            <div class="add-to-cal-btn product-save-btn">
-              <button type="submit" class="btn btn-primary save-btn" ng-click="saveProduct(product)">Save</button>
-            </div>
-            <ul class="list-inline">
-              <li class="links"><a class="links" ng-href="#!/return-policy">Return Policy</a></li>
-            </ul>
-          </div>
+          <h1 class="product-summary-header">{{products.name}}</h1>
+          <h4 class="product-summary-descripton">{{products.description}}</h4>
+          <br>
         </div>
-      </div>
     </div>
   </div>  
-  <br>
-  <br>
-<!-- Privacy policy and return policy -->  
+<!-- Product Cards -->
   <div class="row">
-    <ul class="list-inline">
-      <div class="col-md-2">
-        <li><a ng-href="#!/privacy-policy">Privacy Policy</a></li>
-      </div>
-      <div class="col-md-2">
-        <li><a ng-href="#!/return-policy">Return Policy</a></li>
-      </div>
-    </ul> 
-  </div>        
+    <div class="col-md-12">
+    <br>
+    <br>
+      <uib-accordion close-others="oneAtATime">
+        <div uib-accordion-group class="panel-default col-md-7" heading="{{product.name}}" ng-repeat="product in productlist">
+          <p><img class="product-image" src="{{product.image}}"></p>
+          <p><b>{{product.description}}</b></p>
+          <p>{{product.price}}</p>
+          <br>
+          <ul class="list-inline add-to-cal-btn">
+              <li type="submit" class="btn btn-primary save-btn btn-xs" ng-href="" ng-click=""><span class="glyphicon glyphicon-shopping-cart"></span><a class="links">Cart</a></li>
+              <li type="submit" class="btn btn-primary save-btn btn-xs" ng-click="saveProduct(product)"><span class="glyphicon glyphicon-pushpin"></span><a class="links">Save</a></li>
+              <li><span class="glyphicon glyphicon-flag"></span><a class="links" ng-href="#!/return-policy">Return Policy</a></li>
+          </ul>         
+        </div>
+      </uib-accordion>  
+    </div> 
+  </div> 
+  <br>
+  <br>
+</div>
+
+
+
+

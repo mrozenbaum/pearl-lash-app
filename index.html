@@ -11,11 +11,13 @@
 </head>
 
 <!-- Main Page -->
-<body class="container-fluid background-image">
-  <div ng-include="'partials/navbar.html'"></div>
-    <div ng-view></div>
-  <div ng-include="'partials/footer.html'"></div>
-
+<body>
+  <div class="container-fluid background-image">
+    <div ng-include="'partials/navbar.html'"></div>
+      <div ng-view></div>
+      <div ui-view></div>
+    <div ng-include="'partials/footer.html'"></div>
+  </div>
 
 <!-- Jquery script tag -->
 <script type="text/javascript" src="/lib/node_modules/jquery/dist/jquery.min.js"></script>
@@ -24,6 +26,16 @@
 <!-- Angular script tags -->
 <script type="text/javascript" src="/lib/node_modules/angular/angular.min.js"></script>
 <script type="text/javascript" src="/lib/node_modules/angular-route/angular-route.min.js"></script>
+
+<script type="text/javascript" src="lib/node_modules/angular-ui-validate/dist/validate.min.js"></script>
+<script type="text/javascript" src="lib/node_modules/angular-ui-router/release/angular-ui-router.min.js"></script>
+<script type="text/javascript" src="lib/node_modules/angular-animate/angular-animate.min.js"></script>
+<script type="text/javascript" src="lib/node_modules/angular-aria/angular-aria.min.js"></script>
+<script type="text/javascript" src="lib/node_modules/angular-ui-bootstrap/dist/ui-bootstrap.js"></script>
+<script type="text/javascript" src="lib/node_modules/angular-ui-bootstrap/dist/ui-bootstrap-tpls.js"></script>
+<script type="text/javascript" src="lib/node_modules/angular-ui-bootstrap/src/popover/popover.js"></script>
+<script type="text/javascript" src="lib/node_modules/angular-ui-bootstrap/src/modal/modal.js"></script>
+
 <!-- firebase script needs to be on top of app.js -->
 <script type="text/javascript" src="/lib/node_modules/firebase/firebase.js"></script>
 <!-- app.js always needs to be on top of all my script tags, before other scripts -->
@@ -44,12 +56,10 @@
 
 <!-- Controllers JS -->
 <script type="text/javascript" src="app/controllers/UserCtrl.js"></script>
-<script type="text/javascript" src="app/controllers/UserDetailsCtrl.js"></script>
 <script type="text/javascript" src="app/controllers/NavCtrl.js"></script>
 <script type="text/javascript" src="app/controllers/ItemNewCtrl.js"></script>
 <script type="text/javascript" src="app/controllers/ItemViewCtrl.js"></script>
 <script type="text/javascript" src="app/controllers/ItemEditCtrl.js"></script>
-<script type="text/javascript" src="app/controllers/TodoCtrl.js"></script>
 <script type="text/javascript" src="app/controllers/ItemListCtrl.js"></script>
 <script type="text/javascript" src="app/controllers/HomePageCtrl.js"></script>
 <script type="text/javascript" src="app/controllers/ContactUsCtrl.js"></script>

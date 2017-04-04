@@ -2,20 +2,17 @@
   <div class="container-fluid">
     <header class="main-header">
       <div class="row">
-        <div class="col-md-12 header-nav">
-          <div class="nav-bar-top social-icons header-links">
+        <div class="col-md-12 nav-bar-top header-nav navbar-fixed-top">
+        <br>
+          <div class="social-icons header-links">
 <!-- header menu bar -->               
             <ul class="header-links list-inline navbar-left">
-                <li class="list-inline col-md-.5"><a class="links"  ng-href="#!/login">Signin</a></li>
-                <li class="list-inline col-md-.5"><a class="links" ng-href="#!/user-profile">My Profile</a></li>
-                <li class="list-inline col-md-.5"><a class="links" ng-href="#!/home-page">Signout</a></li>
+                <li class="list-inline col-md-.5"><span class="glyphicon glyphicon-shopping-cart"></span><a class="links" ng-href="#!/online-store">Online Store</a></li>
+                <li class="list-inline col-md-.5"><span class="glyphicon glyphicon-home"></span><a class="links" ng-href="#!/home-page">Home</a></li>
+                <li ng-show="!isLoggedIn" class="list-inline col-md-.5"><span class="glyphicon glyphicon-user"></span><a class="links"  ng-href="#!/login">Login</a></li>
+                <li class="list-inline col-md-.5"><span class="glyphicon glyphicon-heart"></span><a class="links" ng-href="#!/user-profile"> Profile</a></li>
+                <li ng-show="isLoggedIn" class="list-inline col-md-.5"><a class="links" ng-href="#!/home-page">Signout</a></li>
             </ul>    
-         
-                <div class="col-md-8">
-                  <!-- White space -->
-
-                </div>
-
 <!-- Social Icons -->  
               <ul class="header-links list-inline navbar-right"> 
 
@@ -32,54 +29,6 @@
           </div>
           <br>
           <br>
-        </div>
-      </div>
-  <!-- Top Nav ends here -->
-
-  <!-- Area for Logo -->
-
-
-      <div class="row">
-      <br>
-      <br>
-        <div class="col-md-12 image-div">
-          <!-- <img style="" src="images/pearlLogos/Logo-edit-polkadot.jpg" class="pearl-lash-logo"> -->
-        </div>
-      <br>
-      <br>  
-      </div>
-      <br>
-      <br>
-
-  <!-- Logo ends here -->
-
-  <!-- Main Menu //// for each page -->
-      <div class="row">
-        <div class="col-md-12 main-nav">
-        <br>
-              <ul class="menu-links">
-                <div class="col-md-2">
-                <li ng-show="!isLoggedIn"><a class="links" ng-href="#!/home-page">Home</a></li>  
-                </div>
-                <div class="col-md-2">
-                <li ng-show="!isLoggedIn"><a class="links" ng-href="#!/online-store">Online Store</a></li>
-                </div>
-                <div class="col-md-2">
-                <li ng-show="!isLoggedIn"><a class="links" ng-href="#!/courses">Courses</a></li>
-                </div>
-                <div class="col-md-2">
-                <li ng-show="!isLoggedIn"><a class="links" ng-href="#!/about-us">About</a></li>
-                </div>
-                <div class="col-md-2">
-                <li ng-show="!isLoggedIn"><a class="links" ng-href="#!/contact-us">Contact</a></li> 
-                </div>
-                <!-- NEED TO ADD NG-SHOW -->
-                <div class="col-md-2">
-                <li ng-show="!isLoggedIn" class="footer-links col-md-.5"><a class="links" ng-href="#!/privacy-policy">Privacy Policy</a></li> 
-                </div> 
-              </ul>
-        <br>      
-        <br>      
         </div>
       </div>
   </header> 

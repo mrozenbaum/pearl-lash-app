@@ -4,67 +4,101 @@ html{
 }
 .background-image{
   background-image:url('../images/pl-letter-logo/websiteBg-holga-white.jpg');
-  /*max-height: 800px;
-  max-width: 800px;*/
-  /*background-repeat: no-repeat;*/
   background-attachment: fixed;
-
+}
+.background-profile{
+  margin-top: 10%;
+  margin-bottom: 2%;
+  border: 12px solid white;
+  background-image:url('../images/pl-letter-logo/websiteBg-stripes-white.jpg');
+  background-attachment: fixed;
+}
+/* miriam link */
+.by-miriam{
+  color:darkgray;
 }
 
-/* Basic styling for pages */
 
+/* Basic styling for pages */
+/* footer styles */
+.main-footer{
+  background: lightgray;
+}
+/* privacy policy styles */
+.privacy-policy{
+  margin: 10%;
+  padding:10%;
+}
 /* main header navigation styles */
 .header-nav{
   background: white;
   border: 2px solid white;
-  /*border-radius: 30%;*/
-  margin-top:50px;
-}
-/* main menu styles */
-.main-nav{
-  background: white;
-  border: 2px solid white;
-  /*border-radius: 30%;*/
-  margin-top: 50px;
 }
 
 .footer-social-links{
   background-color: white;
-  /*border-radius: 30%;*/
+
 }
-/*.footer-social-links:hover{*/
-  /*font-size: 18px;*/
-/*}*/
 
 .footer-copyright{
   background: gray;
   margin-top: 50px;
-  /*border-radius: 30%;*/
-  margin-bottom: 20px;
 }
-/* styling for course cards */
-.course-cards{
-  border: 2px solid black;
-  margin: 10px;
-  padding: 20px;
-  width: 500px;
-  height: 700px;
-  text-align: center;
+
+/* course name styles */
+.course-name{
+  font-weight: bold;
 }
-.course-cards:hover{
-  border: 5px solid gray;
+.course-note{
+  font-weight: bold;
+  font-size: 10px;
 }
-.courses-image{
+
+.course-image{
   max-width: 250px;
   max-height: 250px;
+  text-align: center;
+}
+.course-name{
+  font-weight: bold;
+}
+.course-note{
+  font-style: italic;
+}
+.course-page-heading{
+  text-align: center;
+}
+.course-page-summary{
+  padding-right: 10%;
+  padding-left: 10%;
 }
 /* product card styling */
 .products-name{
   font-weight: bold;
 }
+.products-cards{
+  border: 4px solid gray;
+  margin: 10px;
+  padding: 20px;
+  text-align: center;
+  background: white;
+}
+.product-summary-header{
+  text-align: center;
+}
+.product-summary-descripton{
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.product-image{
+  max-width: 250px;
+  max-height: 250px;
+  text-align: center;
+}
+
 /* item-list - user details page */
 .user-details{
-  border: 2px solid gray;
   padding: 15px;
   margin: 15px;
 }
@@ -82,18 +116,20 @@ html{
 
 /* image stying for products */
 .products-image{
-  max-width: 250px;
-  max-height: 250px;
+  max-width: 200px;
+  max-height: 200px;
 }
 /* product cards styling */
-.products-list{
-  width: 500px;
-  height: 700px;
+.product-cards{
   text-align: center;
+  background: white;
+  border: 4px solid gray;
 }
+
 /* gray border when user hovers over product card */
-.products-list:hover{
-  border: 4px solid gray ;
+.product-cards:hover{
+  border: 6px solid gray ;
+
 }
 .saved-product-card{
   border: 2px solid black;
@@ -102,7 +138,7 @@ html{
 .saved-user-product-cards{
   width: 500px;
   height: 500px;
-  border: 2px solid black;
+  border: 4px solid gray;
 }
 
 /* social icons styling */
@@ -134,12 +170,12 @@ html{
 }
 /* social icons styling */
 .mail-png{
-  max-width: 32px;
-  max-height: 32px;
+  max-width: 50px;
+  max-height: 50px;
 }
 .mail-png:hover{
-  max-width: 40px;
-  max-height: 40px;
+  max-width: 60px;
+  max-height: 60px;
 }
 /* social icons styling */
 .twitter-png{
@@ -171,9 +207,6 @@ html{
   padding-bottom: 10px;
 }
 
-
-
-
 /* pearl lash logo styling */
 .pearl-lash-logo {
   max-height: 650px ;
@@ -181,10 +214,9 @@ html{
   text-align: center;
 }
 
-
-
-/* all links */
+/* all/most links */
 .links{
+  padding: 10px;
   color:black;
   font-weight: bold;
   list-style-type: none; /*for user profile*/
@@ -192,7 +224,7 @@ html{
 .links:hover{
   color:black;
   font-size:16px;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 .user-background{
@@ -201,7 +233,6 @@ html{
   max-width: 500px;
 }
 
-
 /* pearl lash logo in navbar */
 .image-div{
   text-align: center;
@@ -209,17 +240,13 @@ html{
 /* links in header */
 .header-links{
   list-style-type: none;
+  padding: 10px;
 }
-/* links in dropdown menu */
-/*.dropdown{
-  list-style-type: none;
-}*/
+
 /* links in menu */
 .menu-links{
   list-style-type: none;
 }
-
-
 
 /* footer links */
 .footer-links{
@@ -227,37 +254,13 @@ html{
   color: white;
 }
 
-
-
-/* my carousel */
-#myCarousel{
-  max-height: 800px;
-  max-width: 800px;
-  padding: 20px;
-}
-.carousel-img{
-  max-width: 800px;
-  max-height: 800px;
-}
-/* google login form */
-#googleLogin{
-
-}
 /* product cards */
 .product-cards{
-  border: 4px dotted grey;
+  border: 4px solid grey;
   margin: 10px;
   padding: 10px;
 }
 
-/* course name styles */
-.course-name{
-  font-weight: bold;
-}
-.course-note{
-  font-weight: bold;
-  font-size: 10px;
-}
 /* save btn in courses page */
 .save-btn{
   background: #9068be;
@@ -274,45 +277,126 @@ html{
   color: white;
   border: 2px solid #9068be;
 }
-/* styles for product cards */
-.products-list{
-  border: 2px solid black;
-  margin: 10px;
-  padding:20px;
+
+.user-link{
+  color: black;
+  font-size: 18px;
 }
-/* user profile styles */
-.user-image{
-  /*border: 2px solid black;*/
-}
-/* user profile styles */
-.user-info{
-  /*border: 2px solid black;*/
-}
-/* user profile styles */
-.user-links{
-  border: 2px solid black;
+.user-link:hover{
+  font-size: 20px;
 }
 /* user profile styles */
 .user-name{
-  border: 2px solid black;
+  /*border: 2px solid black;*/
   text-align: center;
 }
 .user-background{
   max-height: 400px;
   max-height: 600px;
 }
-.user-profile-card{
-  border: 2px solid black;
+
+.welcome-user{
+  text-align: center;
 }
 
-.course-list{
+/* about page */
+.about-image{
+  max-height: 600px;
+  max-width: 600px;
+}
+
+.about-logo{
+  text-align: center;
+  background: white;
+}
+
+.k-profile-image{
+  text-align: center;
+  max-width: 450px;
+  max-height: 450px;
+}
+
+.about-name{
+  text-align: center;
 
 }
 
+.k-profile-image{
+  border: 12px solid lightgrey;
+  border-radius: 50%;
+}
+.k-profile-image:hover{
+  border: 15px solid lightgrey;
+}
+
+.about-k-image{
+  display: block;
+  padding-left: 35%;
+}
+
+.about-container{
+  padding: 10% 10% 2% 10%;
+  letter-spacing: 2px;
+  font-size: 16px;
+  line-height: 22px;
+}
 
 
+/* home page */
+.home-logo{
+  text-align: center;
+  background: white;
+}
+.home-image{
+  max-width: 650px;
+  max-height: 650px;
+}
+.logo-container{
+  background: white;
+  text-align: center;
+}
 
+.footer-label{
+  text-decoration: underline;
+  text-align:center;
+}
 
+.carousel-img{
+  text-align: center;
+}
+.carousel-inner{
+  border: 20px solid white;
+}
+
+.carousel-home{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-height: 500px;
+  max-width: 650px;
+}
+.promo-logo{
+  text-align: center;
+  margin: 5%;
+}
+.promo-logo-image{
+  max-width: 500px;
+  max-height: 800px;
+  border: 12px solid lightgray;
+  margin-bottom: 2%;
+}
+.promo-logo-image:hover{
+  border: 16px solid lightgray;
+}
+
+/* user proife */
+.welcome-user{
+  background: white;
+  border: 5px solid lightgrey;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
 
 
 

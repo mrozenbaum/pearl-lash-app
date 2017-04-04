@@ -1,28 +1,39 @@
-<div ng-controller="CoursesCtrl"></div>
-    <div class="row">
-      <div class="col-md-12">
-        <!-- <div class="col-md-3 saved-course-card"> -->
-       
-          <div ng-repeat="course in coursesSaved" class="course-cards">
-            <!-- <div class="col-md-3"> -->
-              <img class="course-image" src="{{course.image}}">
-              <h5>course: {{course.name}}</h5>
-              <p>{{course.description}}</p>
+
+<div ng-controller="CoursesCtrl">
+  <div class="container-fluid background-profile">
+      <div class="row">
+        <br>
+        <br>
+        <div class="col-md-12">
+          <br>
+          <h2 style="text-align: center">Your saved courses...</h2>
+          <br>
+        </div>
+      </div>    
+  <!-- Course Cards -->
+      <div class="row">
+        <div class="col-md-12">
+          <br>
+          <br>
+          <uib-accordion close-others="oneAtATime">
+            <div uib-accordion-group class="panel-default col-md-7" heading="{{course.name}}" ng-repeat="course in coursesSaved">
+              <p><img class="course-image" src="{{course.image}}"></p>
+              <p><b>{{course.description}}</b></p>
+              <br>
               <p class="course-note">{{course.note}}</p>
-              <div>
               <br>
-              <br>
-              <a class="save-btn btn btn-danger" ng-click="itemDelete(item.id)">Sign Up!</a>
-              <br>
-              <br>
-              <a class="save-btn btn btn-default" ng-href="#!/user-profile">My Profile</a>
-              <br>
-              <br>
-              <a class="save-btn btn btn-danger" ng-click="courseDelete(course.id)">Delete</a>
-            <!-- </div> -->
+              <ul class="list-inline add-to-cal-btn">
+                  <li type="submit" class="btn btn-primary save-btn btn-xs" ng-href="" ng-click=""><span class="glyphicon glyphicon-shopping-cart"></span><a class="links">Cart</a></li>
+                  <li type="submit" class="btn btn-primary save-btn btn-xs" ng-click="courseDelete(course.id)"><span class="glyphicon glyphicon-pushpin"></span><a class="links">Delete</a></li>
+                  <li><span class="glyphicon glyphicon-flag"></span><a class="links" ng-href="#!/return-policy">Return Policy</a></li>
+              </ul>         
             </div>
+          </uib-accordion> 
+        </div>
       </div>
-    </div>
-   </div> 
-  <!-- </div> -->
+      <br>
+      <br>
+  </div>
+</div>
+   
 

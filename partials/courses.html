@@ -1,50 +1,45 @@
-<!-- List of Courses goes here -->
-<!-- <h1>Courses</h1> -->
-<div class="row">
-    <div class="col-md-12">
+<!-- Courses Page -->
+  <div ng-controller="CoursesCtrl">
+    <div class="row">
+    <br>
+    <br>
+      <div class="col-md-12">
+      <br>
+      <br> 
+      <br>
+      <br>
+<!-- Main courses page summary -->
+          <div ng-repeat="summary in summary">
+            <h3 class="course-page-heading"><b>{{summary.name}}</b></h3>
+            <h4 class="course-page-summary">{{summary.description}}</h4>
+          </div>
+      </div> 
+    </div> 
+    <!-- Course Cards -->
+    <div class="row">
+      <div class="col-md-12">
+      <br>
+      <br>
+      <!-- <img class="course-image" src="{{course.image}}"> -->
+        <uib-accordion close-others="oneAtATime">
+          <div uib-accordion-group class="panel-default col-md-7" heading="{{course.name}}" ng-repeat="course in courses">
+          <p><img class="course-image" src="{{course.image}}"></p>
+          <p><b>{{course.description}}</b></p>
           <br>
-          <br> 
-  <!-- Main course page summary -->
-          <div ng-controller="CoursesSummaryCtrl">
-            <div ng-repeat="summary in summary">
-              <div class="course-page-heading"><h4><b>{{summary.name}}</b></h4></div>
-              <br>
-              <div class="course-page-summary">{{summary.description}}</div>
-            </div>
+          <p class="course-note">{{course.note}}</p>
+            <br>
+            <ul class="list-inline add-to-cal-btn">
+                <li type="submit" class="btn btn-primary save-btn btn-xs" ng-href="" ng-click=""><span class="glyphicon glyphicon-shopping-cart"></span><a class="links">Cart</a></li>
+                <li type="submit" class="btn btn-primary save-btn btn-xs" ng-click="saveCourse(course)"><span class="glyphicon glyphicon-pushpin"></span><a class="links">Save</a></li>
+                <li><span class="glyphicon glyphicon-flag"></span><a class="links" ng-href="#!/return-policy">Return Policy</a></li>
+            </ul>         
           </div>
-          <!-- <div class="certificate-image">
-            <ul>
-              <li><a><img src="../images/pearl-lash-basic-certificate.png">View Certificate</a></li>
-            </ul>
-          </div> -->
-           <br>
-          <br> 
-    </div>
-</div>       
-  <!-- Course Option cards -->
-  <div class="row">  
-    <div class="col-md-12">
-      <div ng-controller="CoursesCtrl">
-        <div ng-repeat="course in courses">
-          <div class="col-md-3 course-cards">
-            <img class="courses-image" src="{{course.image}}">
-            <div class="course-name">Course: {{course.name}}</div>
-            <br>
-            <div class="course-description">{{course.description}}</div>
-            <br>
-            <div class="course-note">{{course.note}}</div>
-            <br>
-            <div class="add-to-cal-btn">
-              <button type="submit" class="btn btn-primary save-btn" ng-click="saveCourse(course)">Sign Up!</button>
-            </div>
-            <br>
-            <div class="add-to-cal-btn">
-              <button type="submit" class="btn btn-primary save-btn" ng-click="saveCourse(course)">Save</button>
-            </div>
-          </div>
-        </div>
+        </uib-accordion>
       </div>
     </div>
-</div>
+    <br>
+    <br>
+  </div> 
 
-<!-- Please note that in order to partake in any of our training courses you must either be currently enrolled in a beauty school (cosmetology, full specialty, or esthetician) or already hold an active beauty license as required of the state you reside in. -->
+
+

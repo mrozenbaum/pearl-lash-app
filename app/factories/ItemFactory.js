@@ -1,4 +1,4 @@
-"use strict";
+ "use strict";
 // getting user profile data from firebase
 app.factory("ItemStorage", ($q, $http, FBCreds) => {
 

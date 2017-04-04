@@ -1,6 +1,6 @@
 "use strict";
 
-var app = angular.module("PearlLashApp", ["ngRoute"]);
+var app = angular.module("PearlLashApp", ['ngRoute', 'ui.bootstrap', 'ui.router', 'ui.validate']);
 
   //used to authenticate user when navigating to other views
   let isAuth = (AuthFactory) => new Promise ( (resolve, reject) => {
@@ -12,11 +12,6 @@ var app = angular.module("PearlLashApp", ["ngRoute"]);
         console.log("Authenticated, go ahead.");
         resolve();
       } 
-
-      // else {
-      //   console.log("Authentication rejected, go away.");
-      //   reject();
-      // }
 
     });
 
@@ -49,16 +44,15 @@ app.config( function ($routeProvider) {
     templateUrl: "partials/contact-us.html",
     controller: "ContactUsCtrl"
   }).
+    when("/payment-form", {
+    templateUrl: "partials/payment-form.html",
+    controller: "PaymentCtrl"
+  }).
     when("/courses", {
     templateUrl: "partials/courses.html",
     controller: "CoursesCtrl",
     resolve:{isAuth}
   }).
-    when('/courses', {
-      templateUrl: 'partials/courses.html',
-      controller: 'CoursesCtrl',
-      resolve:{isAuth}
-    }).
     when("/user-saved-course", {
     templateUrl: "partials/user-saved-course.html",
     controller: "CoursesCtrl",
@@ -67,11 +61,6 @@ app.config( function ($routeProvider) {
     when("/about-us", {
     templateUrl: "partials/about-us.html",
     controller: "AboutUsCtrl"
-  }).
-    when("/online-store", {
-    templateUrl: "partials/online-store.html",
-    controller: "ProductsCtrl",
-    resolve:{isAuth}
   }).
     when("/online-store", {
     templateUrl: "partials/online-store.html",
@@ -93,21 +82,11 @@ app.config( function ($routeProvider) {
     controller: 'ItemNewCtrl',
     resolve: {isAuth}
   }).
-  when('/items', {
-    templateUrl: "partials/item-details.html",
-    controller: 'ItemViewCtrl',
-    resolve: {isAuth}
-  }).
   when('/items/edit', {
     templateUrl: 'partials/item-form.html',
     controller: 'ItemEditCtrl',
     resolve: {isAuth}
   }).
-   when('/login-details', {
-      templateUrl: 'partials/user-details.html',
-      controller: 'UserDetailsCtrl',
-      resolve: {isAuth}
-    }).
     when('/privacy-policy', {
       templateUrl: 'partials/privacy-policy.html',
       controller: 'PearlLashPolicyCtrl',
